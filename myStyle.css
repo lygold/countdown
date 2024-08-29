@@ -7,7 +7,7 @@ body {
     background-color: #f7f7f7;  /* Set background color for empty spaces */
     position: relative; /* Set positioning context for pseudo-element */
     overflow: hidden; /* Prevent scrolling if image goes outside viewport */
-	padding-top: 60px; 
+    padding-top: 60px; 
 }
 
 /* Pseudo-element to display the background image */
@@ -20,7 +20,7 @@ body::before {
     height: 100%;
     background-image: url('image.jpg');  
     background-repeat: no-repeat;  /* Prevent repeating */
-	background-size: cover;  /* Maintain aspect ratio and fit image */
+    background-size: cover;  /* Maintain aspect ratio and fit image */
     background-position: center center;  /* Center the image */
     
     padding: 0 20vw;  /* Add padding to the sides */
