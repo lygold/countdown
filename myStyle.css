@@ -1,0 +1,39 @@
+body {
+    font-family: 'Great Vibes', sans-serif;
+    text-align: center;
+    color: #040404;
+    margin: 0;
+    padding: 0;  /* Reset body padding */
+    background-color: #f7f7f7;  /* Set background color for empty spaces */
+    position: relative; /* Set positioning context for pseudo-element */
+    overflow: hidden; /* Prevent scrolling if image goes outside viewport */
+	padding-top: 200px; 
+}
+
+/* Pseudo-element to display the background image */
+body::before {
+    content: "";
+    position: fixed;  /* Fixed to stay in place when scrolling */
+    top: 0;
+    left: 0;
+    width: calc(100% - 40vw);
+    height: 100%;
+    background-image: url('image.jpg');  
+    background-repeat: no-repeat;  /* Prevent repeating */
+	background-size: cover;  /* Maintain aspect ratio and fit image */
+    background-position: center center;  /* Center the image */
+    
+    padding: 0 20vw;  /* Add padding to the sides */
+    z-index: -1;  /* Place behind the content */
+}
+
+.countdown-container {
+    text-align: center;
+  /*  padding-top: 150px;  /* Adjust top padding as needed */
+}
+
+#countdown {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #559247;
+}
